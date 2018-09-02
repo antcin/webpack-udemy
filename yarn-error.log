@@ -1,0 +1,46 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add @babel/core --save
+
+PATH: 
+  /Users/antcin/.rvm/gems/ruby-2.5.0/bin:/Users/antcin/.rvm/gems/ruby-2.5.0@global/bin:/Users/antcin/.rvm/rubies/ruby-2.5.0/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:/Users/antcin/.rvm/gems/ruby-2.5.0/bin:/Users/antcin/.rvm/gems/ruby-2.5.0@global/bin:/Users/antcin/.rvm/rubies/ruby-2.5.0/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/antcin/.rvm/bin:/Users/antcin/.rvm/bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  9.8.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/babel-core: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:135339:19)
+      at ontimeout (timers.js:466:11)
+      at tryOnTimeout (timers.js:304:5)
+      at Timer.listOnTimeout (timers.js:267:5)
+
+npm manifest: 
+  {
+    "name": "webpack-tutorial",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "webpack"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "babel-core": "^6.26.3",
+      "babel-loader": "^8.0.0",
+      "babel-preset-env": "^1.7.0",
+      "webpack": "^4.17.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
