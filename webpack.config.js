@@ -18,6 +18,16 @@ const config = {
           use: "css-loader"
         }),
         test: /\.css$/
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg?)$/,
+        use: [
+          {
+            use: "url-loader",
+            options: { limit: 40000 } // look for any images that are lesser than 40 kB
+          },
+          "image-webpack-loader"
+        ] // order matters, far right loader is first to be exectued
       }
     ]
   },
